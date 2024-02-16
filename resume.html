@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<body>
+    <script>
+        var resume = { 
+            "name":"Shaik Rabbani", 
+            "age":35, 
+            "dob":"21-08-1987", 
+            "email":"rabbanishaik1421@gmail.com", 
+            "mobile":8688735363, 
+            "altmobile":7981492625, 
+            "address":{ 
+                "dno":"10-25", 
+                "street":"sairam bazar", 
+                "addressline2":"ram nagar", 
+                "city":"Gannavaram", 
+                "district":"Krishna", 
+                "state":"Andhra Pradesh", 
+                "pincode":521101 
+            }, 
+            "qualification":{ 
+                "education":"MCA", 
+                "yearPassed":2011, 
+                "college":"ANR College, Gudivada" 
+            }
+        };
+        
+        var resumeArr = Object.values(resume);
+
+        //for loop
+        console.log("===For Loop===")
+        for(var d=0; d<resumeArr.length; d++){
+            console.log(resumeArr[d]);
+        }
+        //for in
+        console.log("=== For in ===")
+        for(var k in resume){
+            console.log(resume[k])
+        }
+
+        //For Each
+        console.log("=== For each ===")        
+        resumeArr.forEach((element)=>{
+            console.log(element)
+        });
+
+        //For of
+        console.log("=== For Of ===")
+        for(const data of resumeArr){
+            console.log(data)
+        }
+
+    </script>
+</body>
+</html>
